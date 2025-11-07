@@ -12,6 +12,7 @@ public class HelloTools   {
     //tools
     @McpTool(name = "hello-tool", description = "A tool that returns a hello message from the MCP server")
     public String getHello() {
+        log.info("getHello tool called");
         var greeting = "Hello from MCP server!";
         return greeting;
     }
